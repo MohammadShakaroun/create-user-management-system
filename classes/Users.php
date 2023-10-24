@@ -240,11 +240,12 @@ class Users{
 
       if ($email == "" || $password == "" ) {
         $msg = '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-  <strong>Error !</strong> Email or Password not be Empty !</div>';
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+              <strong>Error !</strong> Email or Password not be Empty !</div>';
           return $msg;
 
-      }elseif (filter_var($email, FILTER_VALIDATE_EMAIL === FALSE)) {
+      }
+      elseif (filter_var($email, FILTER_VALIDATE_EMAIL === FALSE)) {
         $msg = '<div class="alert alert-danger alert-dismissible mt-3" id="flash-msg">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>Error !</strong> Invalid email address !</div>';
@@ -334,7 +335,6 @@ class Users{
           return $msg;
       }
       else{
-
         $sql = "UPDATE tbl_users SET
           name = :name,
           username = :username,

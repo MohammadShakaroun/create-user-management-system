@@ -70,17 +70,14 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout') {
       			 ?>
 
             ">
-
               <a class="nav-link" href="profile.php?id=<?php echo Session::get("id"); ?>"><i class="fab fa-500px mr-2"></i>Profile <span class="sr-only">(current)</span></a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="?action=logout"><i class="fas fa-sign-out-alt mr-2"></i>Logout</a>
             </li>
           <?php }else{ ?>
 
               <li class="nav-item
-
               <?php
                $path = $_SERVER['SCRIPT_FILENAME'];
                $current = basename($path, '.php');
