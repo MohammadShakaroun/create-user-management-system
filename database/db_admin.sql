@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 09:13 AM
+-- Generation Time: Oct 25, 2023 at 03:10 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -65,9 +65,9 @@ CREATE TABLE `tbl_users` (
 --
 
 INSERT INTO `tbl_users` (`id`, `name`, `username`, `email`, `password`, `mobile`, `roleid`, `isActive`, `created_at`, `updated_at`) VALUES
-(23, 'test', 'test', 'test@test.com', 'c55aa49185543c5f5964255e86ce8c2d1ffaf876', '98989898989', 3, 0, '2023-10-17 07:04:01', '2023-10-17 07:04:01'),
-(24, 'hassan hassan', 'hassan', 'hassan@gmail.com', 'a639100af178db9e3f4803d0938a5f8bb2d7c433', '7669909868', 1, 0, '2023-10-18 12:36:46', '2023-10-18 12:36:46'),
-(25, 'Mohamad Shakaroun', 'Mohamad', 'user@gmail.com', '911b375b2acdb2150698427f96040ee304b1c731', '0096103794282', 1, 0, '2023-10-25 06:48:02', '2023-10-25 06:48:02');
+(1, 'test', 'test', 'test@test.com', 'c55aa49185543c5f5964255e86ce8c2d1ffaf876', '98989898989', 3, 0, '2023-10-17 07:04:01', '2023-10-17 07:04:01'),
+(2, 'hassan hassan', 'hassan', 'hassan@gmail.com', 'a639100af178db9e3f4803d0938a5f8bb2d7c433', '7669909868', 1, 0, '2023-10-18 12:36:46', '2023-10-18 12:36:46'),
+(3, 'Mohamad Shakaroun', 'Mohamad', 'user@gmail.com', '911b375b2acdb2150698427f96040ee304b1c731', '0096103794282', 1, 0, '2023-10-25 06:48:02', '2023-10-25 06:48:02');
 
 --
 -- Indexes for dumped tables
@@ -99,7 +99,7 @@ ALTER TABLE `tbl_roles`
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
