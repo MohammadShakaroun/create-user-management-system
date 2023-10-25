@@ -62,8 +62,9 @@ if (isset($userAdd)) {
       </div>
 
 <?php
-}else{
+}
 
+  else{
   header('Location:index.php');
 }
  ?>
